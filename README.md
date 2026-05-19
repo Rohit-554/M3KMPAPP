@@ -1,9 +1,14 @@
 # m3App
+- Material 3 Cozy Travel UI in Compose
 
-Generated with Catylst KMP Starter Kit.
+
+## Demo 
+<img width="1672" height="941" alt="ChatGPT Image May 19 2026 from Material 3 Travel App" src="https://github.com/user-attachments/assets/e3ce60fb-bafa-4442-a751-ff025b888730" />
+
 
 ## Features
 
+- Generated with Catylst KMP Starter Kit.
 - Sample Code: Included
 
 ## Platforms
