@@ -10,6 +10,29 @@ plugins {
 }
 
 kotlin {
+
+    // SPM SUPPORT
+    kotlin {
+        swiftPMDependencies {
+            swiftPackage(
+                url = url("https://github.com/firebase/firebase-ios-sdk.git"),
+                version = from("12.11.0"),
+                products = listOf(
+                    product("FirebaseAnalytics"),
+                    product("FirebaseAuth")
+                )
+            )
+        }
+    }
+
+    compilerOptions {
+        freeCompilerArgs.add("-Xexplicit-backing-fields")
+        freeCompilerArgs.add("-Xcontext-parameters")
+        freeCompilerArgs.add("-Xannotation-target-all")
+        freeCompilerArgs.add("-Xexplicit-context-arguments")
+        freeCompilerArgs.add("-Xcollection-literals")
+    }
+
     listOf(
         iosArm64(),
         iosSimulatorArm64()
